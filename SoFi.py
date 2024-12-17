@@ -13,7 +13,7 @@ current_directory = os.getcwd()
 if user_answer == "y":
     print("Поточний робочий каталог:", current_directory)
     print("")
-# Отримуємо список файлів, виключаючи файл скрипта (sortfiles.py)
+# Отримуємо список файлів, виключаючи файл скрипта (SoFi.py) та виконуючий файл (SoFi.exe)
 files = [f for f in os.listdir(current_directory)
         if os.path.isfile(os.path.join(current_directory, f)) and f !='SoFi.py' and f !='SoFi.exe']
 
