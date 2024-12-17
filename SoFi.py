@@ -15,7 +15,7 @@ if user_answer == "y":
     print("")
 # Отримуємо список файлів, виключаючи файл скрипта (sortfiles.py)
 files = [f for f in os.listdir(current_directory)
-        if os.path.isfile(os.path.join(current_directory, f)) and f !='sortfiles.py' and f !='SoFi.py' and f !='SoFi.exe']
+        if os.path.isfile(os.path.join(current_directory, f)) and f !='SoFi.py' and f !='SoFi.exe']
 
 # Виводимо список файлів
 for file in files:
